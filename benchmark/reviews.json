@@ -1,0 +1,270 @@
+{
+  "reviews": [
+    {
+      "reviewer": "Reviewer-A",
+      "case_id": "case-01",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-01",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-A",
+      "case_id": "case-02",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-02",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-A",
+      "case_id": "case-03",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-03",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-A",
+      "case_id": "case-04",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-04",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-A",
+      "case_id": "case-05",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-05",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-A",
+      "case_id": "case-06",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-06",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-A",
+      "case_id": "case-07",
+      "status": "completed",
+      "findings": []
+    },
+    {
+      "reviewer": "Reviewer-A",
+      "case_id": "case-08",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-08",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-B",
+      "case_id": "case-01",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-01",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-B",
+      "case_id": "case-02",
+      "status": "completed",
+      "findings": []
+    },
+    {
+      "reviewer": "Reviewer-B",
+      "case_id": "case-03",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-03",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-B",
+      "case_id": "case-04",
+      "status": "completed",
+      "findings": []
+    },
+    {
+      "reviewer": "Reviewer-B",
+      "case_id": "case-05",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-05",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-B",
+      "case_id": "case-06",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-06",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-B",
+      "case_id": "case-07",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": null,
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-B",
+      "case_id": "case-08",
+      "status": "completed",
+      "findings": []
+    },
+    {
+      "reviewer": "Reviewer-C",
+      "case_id": "case-01",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-01",
+          "type": "bug"
+        },
+        {
+          "matched_bug_id": "BUG-01",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-C",
+      "case_id": "case-02",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-02",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-C",
+      "case_id": "case-03",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-03",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-C",
+      "case_id": "case-04",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-04",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-C",
+      "case_id": "case-05",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-05",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-C",
+      "case_id": "case-06",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-06",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-C",
+      "case_id": "case-07",
+      "status": "completed",
+      "findings": []
+    },
+    {
+      "reviewer": "Reviewer-C",
+      "case_id": "case-08",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": "BUG-08",
+          "type": "bug"
+        }
+      ]
+    },
+    {
+      "reviewer": "Reviewer-D",
+      "case_id": "case-01",
+      "status": "quota",
+      "findings": []
+    },
+    {
+      "reviewer": "Reviewer-D",
+      "case_id": "case-02",
+      "status": "error",
+      "findings": []
+    },
+    {
+      "reviewer": "Reviewer-E",
+      "case_id": "case-07",
+      "status": "completed",
+      "findings": [
+        {
+          "matched_bug_id": null,
+          "type": "bug"
+        }
+      ]
+    }
+  ]
+}
