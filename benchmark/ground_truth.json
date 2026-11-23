@@ -1,0 +1,93 @@
+{
+  "cases": [
+    {
+      "case_id": "case-01",
+      "title": "Page report history by scheduled time",
+      "ground_truth": [
+        {
+          "bug_id": "BUG-01",
+          "category": "pagination",
+          "description": "Keyset pagination cursor uses only scheduled_at without an id tie-breaker, silently skipping deliveries that share the same scheduled timestamp on page boundaries.",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "case_id": "case-02",
+      "title": "Stream the report export",
+      "ground_truth": [
+        {
+          "bug_id": "BUG-02",
+          "category": "data_serialization",
+          "description": "Replacing the csv module with manual string joining fails to quote or escape special characters (commas, quotes, newlines) in report titles, resulting in CSV formatting corruption.",
+          "severity": "medium"
+        }
+      ]
+    },
+    {
+      "case_id": "case-03",
+      "title": "Batch queued deliveries",
+      "ground_truth": [
+        {
+          "bug_id": "BUG-03",
+          "category": "batch_processing",
+          "description": "Batching loop range condition range(0, len(jobs) - batch_size + 1, batch_size) drops trailing remainder jobs when total job count is not an exact multiple of the batch size.",
+          "severity": "critical"
+        }
+      ]
+    },
+    {
+      "case_id": "case-04",
+      "title": "Retire the legacy delivery column",
+      "ground_truth": [
+        {
+          "bug_id": "BUG-04",
+          "category": "database_migration",
+          "description": "Online migration drops column legacy_format while active worker replicas (workers-17 on site elm) are actively querying it, causing runtime query crashes during rolling deployment.",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "case_id": "case-05",
+      "title": "Increase export batch size",
+      "ground_truth": [
+        {
+          "bug_id": "BUG-05",
+          "category": "configuration_compatibility",
+          "description": "Increasing EXPORT_BATCH_SIZE to 50 exceeds the maximum request limit (40 rows) of the archive receiver on site cedar, causing archive export requests to be rejected.",
+          "severity": "medium"
+        }
+      ]
+    },
+    {
+      "case_id": "case-06",
+      "title": "Use the new delivery queue",
+      "ground_truth": [
+        {
+          "bug_id": "BUG-06",
+          "category": "queue_configuration",
+          "description": "Switching DELIVERY_QUEUE to 'report-dispatch' orphans new jobs on site elm because elm workers are only subscribed to the legacy 'reports' queue.",
+          "severity": "high"
+        }
+      ]
+    },
+    {
+      "case_id": "case-07",
+      "title": "Index pending deliveries",
+      "ground_truth": []
+    },
+    {
+      "case_id": "case-08",
+      "title": "Include a total in the activity summary",
+      "ground_truth": [
+        {
+          "bug_id": "BUG-08",
+          "category": "api_contract",
+          "description": "Adding 'total' to the summary response alters the expected dictionary structure, breaking strict dictionary equality checks in aws/deploy.py verification and CI smoke checks.",
+          "severity": "medium"
+        }
+      ]
+    }
+  ]
+}

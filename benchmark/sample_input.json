@@ -1,0 +1,29 @@
+{
+  "cases": [
+    {
+      "case_id": "case-01",
+      "ground_truth": [
+        {
+          "bug_id": "BUG-01",
+          "category": "pagination",
+          "description": "Pagination skips records when multiple records share the same timestamp.",
+          "severity": "high"
+        }
+      ],
+      "reviewers": [
+        {
+          "reviewer": "Reviewer-A",
+          "status": "completed",
+          "findings": [
+            {
+              "category": "pagination",
+              "description": "The cursor only uses timestamp, so records sharing a timestamp can be skipped.",
+              "severity": "high",
+              "matched_bug_id": "BUG-01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
